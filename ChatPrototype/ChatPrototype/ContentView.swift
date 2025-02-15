@@ -28,8 +28,7 @@ extension View {
 
 
 struct ContentView: View {
-    @State private var messages: [String] = [
-    ]
+    @State private var messages: [String] = []
     
     @State private var newMessage: String = ""
     
@@ -41,20 +40,41 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
                 .frame(maxWidth: .infinity, alignment: .center)
             Divider()
-            Spacer()
-            Text("Salut, ça va ?")
-                .applyTextStyle(backgroundColor: Color.gray)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            ForEach(messages, id: \.self) { message in
-                Text(message)
-                    .applyTextStyle(backgroundColor: Color.blue)
+            ScrollViewReader { proxy in
+                ScrollView(.vertical) {
+                    VStack(alignment: .leading) {
+                        Text("Salut, ça va ?")
+                            .applyTextStyle(backgroundColor: Color.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        ForEach(messages.indices, id: \.self) { index in
+                            Text(messages[index])
+                                .applyTextStyle(backgroundColor: Color.blue)
                                 .frame(maxWidth: .infinity, alignment: .trailing)
+                                .id(index) // Assign an id to each message
+                        }
+                    }
+                    .onChange(of: messages) {
+                        if let lastIndex = messages.indices.last {
+                            proxy.scrollTo(lastIndex, anchor: .bottom)
+                        }
+                    }
+                }
+                .frame(maxHeight: .infinity)
             }
+                
+            
             Divider()
             
             HStack {
                 TextField("Message", text: $newMessage)
                     .font(.title)
+                    .onSubmit {
+                        if !newMessage.isEmpty {
+                            messages.append(newMessage)
+                            newMessage = ""
+                        }
+                    }
                 Image(systemName: "paperplane")
                     .font(.system(size: 24))
                     .foregroundStyle(.tint)
