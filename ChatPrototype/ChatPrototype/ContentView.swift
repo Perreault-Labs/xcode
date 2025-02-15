@@ -29,9 +29,6 @@ extension View {
 
 struct ContentView: View {
     @State private var messages: [String] = [
-        "Salut, ça va ?",
-        "Ça va bien et toi ?",
-        "Allo"
     ]
     
     @State private var newMessage: String = ""
@@ -45,10 +42,13 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
             Divider()
             Spacer()
+            Text("Salut, ça va ?")
+                .applyTextStyle(backgroundColor: Color.gray)
+                .frame(maxWidth: .infinity, alignment: .leading)
             ForEach(messages, id: \.self) { message in
-                            Text(message)
-                                .applyTextStyle(backgroundColor: message == "Salut, ça va ?" ? Color.blue : Color.gray)
-                                .frame(maxWidth: .infinity, alignment: message == "Salut, ça va ?" ? .leading : .trailing)
+                Text(message)
+                    .applyTextStyle(backgroundColor: Color.blue)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
             }
             Divider()
             
@@ -59,7 +59,6 @@ struct ContentView: View {
                     .font(.system(size: 24))
                     .foregroundStyle(.tint)
                     .onTapGesture {
-                        print("hello")
                         if !newMessage.isEmpty {
                             messages.append(newMessage)
                             newMessage = ""
