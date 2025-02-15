@@ -28,13 +28,15 @@ extension View {
 
 
 struct ContentView: View {
+    @State private var messages: [String] = [
+        "Salut, ça va ?",
+        "Ça va bien et toi ?",
+        "Allo"
+    ]
+    
+    @State private var newMessage: String = ""
+    
     var body: some View {
-        @State var messages: [String] = [
-            "Salut, ça va ?",
-            "Ça va bien et toi ?",
-            "Allo"
-        ]
-        
         VStack(alignment: .leading)
         {
             Image(systemName: "message")
@@ -47,17 +49,21 @@ struct ContentView: View {
                             Text(message)
                                 .applyTextStyle(backgroundColor: message == "Salut, ça va ?" ? Color.blue : Color.gray)
                                 .frame(maxWidth: .infinity, alignment: message == "Salut, ça va ?" ? .leading : .trailing)
-                }
+            }
             Divider()
             
             HStack {
-                TextField("Message", text: .constant(""))
+                TextField("Message", text: $newMessage)
                     .font(.title)
                 Image(systemName: "paperplane")
                     .font(.system(size: 24))
                     .foregroundStyle(.tint)
                     .onTapGesture {
-                        messages.append("New blue message!")
+                        print("hello")
+                        if !newMessage.isEmpty {
+                            messages.append(newMessage)
+                            newMessage = ""
+                        }
                     }
                    
             }.overlay(Rectangle()
