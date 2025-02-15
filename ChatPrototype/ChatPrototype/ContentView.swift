@@ -7,15 +7,37 @@
 
 import SwiftUI
 
+struct TextStyleModifier: ViewModifier {
+    var backgroundColor: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.title)
+            .padding()
+            .background(backgroundColor, in: RoundedRectangle(cornerRadius: 10))
+            .foregroundColor(.white)
+    }
+}
+
+extension View {
+    func applyTextStyle(backgroundColor: Color) -> some View {
+        self.modifier(TextStyleModifier(backgroundColor: backgroundColor))
+    }
+}
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "message")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Salut, ça va ?")
+                .applyTextStyle(backgroundColor: Color.blue)
+            Text("Ça va bien et toi ?")
+                .applyTextStyle(backgroundColor: Color.gray)
+            
         }
-        .padding()
     }
 }
 
