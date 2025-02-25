@@ -52,7 +52,7 @@ struct ContentView: View {
                             Text(messages[index])
                                 .applyTextStyle(backgroundColor: Color.blue)
                                 .frame(maxWidth: .infinity, alignment: .trailing)
-                                .id(index) // Assign an id to each message
+                                .id(index) 
                         }
                     }
                     .onChange(of: messages) {
