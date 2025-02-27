@@ -59,9 +59,16 @@ Exemple:
 Créer une fonction appelée `multiplie` qui multiplie deux nombres et retourne le résultat.
 */
 
+func multiplie(multiplicande: Double, multiplicateur: Double) -> Double {
+    return multiplicande * multiplicateur
+}
+
 
 
 // Teste ta fonction:
+let multiplicande: Double = 10
+let multiplicateur: Double = 20.4
+print("La multiplication de \(multiplicande) par \(multiplicateur) donne \(multiplie(multiplicande: multiplicande, multiplicateur: multiplicateur))")
 
 /*
 Maintenant, essayons de créer plusieurs autres fonctions de toi-même !
@@ -70,4 +77,20 @@ Maintenant, essayons de créer plusieurs autres fonctions de toi-même !
 */
 
 
+//fonction 1
+func division(dividende: Double, diviseur: Double) -> Double {
+    return dividende / diviseur
+}
+
+let dividende: Double = 10.5
+let diviseur: Double = 0.5
+print("La division de \(dividende) par \(diviseur) donne \(division(dividende: dividende, diviseur: diviseur))")
+
+//fonction 2
+func salutation(nom: String) -> String {
+    return "Salam alaykum, toi... Oui, toi, \(nom). "
+}
+
+let nom: String = "Elliot"
+print(salutation(nom: nom))
 
