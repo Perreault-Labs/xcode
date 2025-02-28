@@ -42,6 +42,8 @@ Essayer d'ajouter des instructions d'affichage pour suivre les changements.
 let monAnnéeDeNaissance = 2008
 var annéeActuelle = 2025
 
+
+//@mainActor give access to root level variable
 @MainActor func CalculateAge() {
     var ageActuel = annéeActuelle - monAnnéeDeNaissance
     if (ageActuel <= 0) {
