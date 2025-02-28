@@ -77,7 +77,7 @@ Maintenant, essayons de créer plusieurs autres fonctions de toi-même !
 */
 
 
-//fonction 1
+//fonction 1 qui permet la divison
 func division(dividende: Double, diviseur: Double) -> Double {
     return dividende / diviseur
 }
@@ -86,7 +86,7 @@ let dividende: Double = 10.5
 let diviseur: Double = 0.5
 print("La division de \(dividende) par \(diviseur) donne \(division(dividende: dividende, diviseur: diviseur))")
 
-//fonction 2
+//fonction 2 qui permet de faire des salutations
 func salutation(nom: String) -> String {
     return "Salam alaykum, toi... Oui, toi, \(nom). "
 }

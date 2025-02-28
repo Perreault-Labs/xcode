@@ -11,15 +11,17 @@
 
 // Exercice 1: Declarer une constante
 // TODO: Declarer une constante nommée `annéeDeNaissance` et lui assigner la valeur de ton année de naissance.
-let annéeDeNaissance = 2008
+//let monAnnéeDeNaissance: Int = 2008
+let annéeDeNaissance = 1997
 
 // Exercice 2: Declarer une variable
 // TODO: Declarer une variable appelée `ageActuel` et lui assigner ton age actuel.
-var ageActuel = 16
-
+var ageActuel = 28
+//var monAgeActuel = 16
 
 // Exercice 3: Changer la valeur d'une variable
 // Imagine que tu nous sommes un an plus tard. Mets à jour `ageActuel` pour refléter ce nouvel age.
+//monAgeActuel+=1
 ageActuel+=1
 
 // Exercice 4: Essayer de changer une constante
@@ -39,11 +41,11 @@ Mini Projet: Traqueur de vie (5 min)
 
 Essayer d'ajouter des instructions d'affichage pour suivre les changements.
 */
-let monAnnéeDeNaissance = 2008
-var annéeActuelle = 2025
+let monAnnéeDeNaissance: Int = 2008
+var annéeActuelle: Int = 2025
 
 
-//@mainActor give access to root level variable
+//@mainActor donne l'accès root
 @MainActor func CalculateAge() {
     var ageActuel = annéeActuelle - monAnnéeDeNaissance
     if (ageActuel <= 0) {
@@ -61,7 +63,6 @@ var annéeActuelle = 2025
 CalculateAge()
 
 //  Incrémenter l'année et l'âge pour simuler le temps qui passe.
-
 IncrementerAnnée()
 IncrementerAnnée()
 CalculateAge()
