@@ -24,25 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D86B25432DD7E8D700C863E7 /* challenge v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D86B25502DD7E8D800C863E7 /* challenge v1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge v1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D86B255A2DD7E8D800C863E7 /* challenge v1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge v1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86B25432DD7E8D700C863E7 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86B25502DD7E8D800C863E7 /* ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86B255A2DD7E8D800C863E7 /* ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D86B25452DD7E8D700C863E7 /* challenge v1 */ = {
+		D86B25452DD7E8D700C863E7 /* challenge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "challenge v1";
-			sourceTree = "<group>";
-		};
-		D86B25532DD7E8D800C863E7 /* challenge v1Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "challenge v1Tests";
-			sourceTree = "<group>";
-		};
-		D86B255D2DD7E8D800C863E7 /* challenge v1UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "challenge v1UITests";
+			path = challenge;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +65,7 @@
 		D86B253A2DD7E8D700C863E7 = {
 			isa = PBXGroup;
 			children = (
-				D86B25452DD7E8D700C863E7 /* challenge v1 */,
-				D86B25532DD7E8D800C863E7 /* challenge v1Tests */,
-				D86B255D2DD7E8D800C863E7 /* challenge v1UITests */,
+				D86B25452DD7E8D700C863E7 /* challenge */,
 				D86B25442DD7E8D700C863E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +73,9 @@
 		D86B25442DD7E8D700C863E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D86B25432DD7E8D700C863E7 /* challenge v1.app */,
-				D86B25502DD7E8D800C863E7 /* challenge v1Tests.xctest */,
-				D86B255A2DD7E8D800C863E7 /* challenge v1UITests.xctest */,
+				D86B25432DD7E8D700C863E7 /* Challenge.app */,
+				D86B25502DD7E8D800C863E7 /* ChallengeTests.xctest */,
+				D86B255A2DD7E8D800C863E7 /* ChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D86B25422DD7E8D700C863E7 /* challenge v1 */ = {
+		D86B25422DD7E8D700C863E7 /* Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D86B25642DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1" */;
+			buildConfigurationList = D86B25642DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "Challenge" */;
 			buildPhases = (
 				D86B253F2DD7E8D700C863E7 /* Sources */,
 				D86B25402DD7E8D700C863E7 /* Frameworks */,
@@ -108,18 +96,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D86B25452DD7E8D700C863E7 /* challenge v1 */,
+				D86B25452DD7E8D700C863E7 /* challenge */,
 			);
-			name = "challenge v1";
+			name = Challenge;
 			packageProductDependencies = (
 			);
 			productName = "challenge v1";
-			productReference = D86B25432DD7E8D700C863E7 /* challenge v1.app */;
+			productReference = D86B25432DD7E8D700C863E7 /* Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D86B254F2DD7E8D800C863E7 /* challenge v1Tests */ = {
+		D86B254F2DD7E8D800C863E7 /* ChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D86B25672DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1Tests" */;
+			buildConfigurationList = D86B25672DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "ChallengeTests" */;
 			buildPhases = (
 				D86B254C2DD7E8D800C863E7 /* Sources */,
 				D86B254D2DD7E8D800C863E7 /* Frameworks */,
@@ -130,19 +118,16 @@
 			dependencies = (
 				D86B25522DD7E8D800C863E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D86B25532DD7E8D800C863E7 /* challenge v1Tests */,
-			);
-			name = "challenge v1Tests";
+			name = ChallengeTests;
 			packageProductDependencies = (
 			);
 			productName = "challenge v1Tests";
-			productReference = D86B25502DD7E8D800C863E7 /* challenge v1Tests.xctest */;
+			productReference = D86B25502DD7E8D800C863E7 /* ChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D86B25592DD7E8D800C863E7 /* challenge v1UITests */ = {
+		D86B25592DD7E8D800C863E7 /* ChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D86B256A2DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1UITests" */;
+			buildConfigurationList = D86B256A2DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "ChallengeUITests" */;
 			buildPhases = (
 				D86B25562DD7E8D800C863E7 /* Sources */,
 				D86B25572DD7E8D800C863E7 /* Frameworks */,
@@ -153,14 +138,11 @@
 			dependencies = (
 				D86B255C2DD7E8D800C863E7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D86B255D2DD7E8D800C863E7 /* challenge v1UITests */,
-			);
-			name = "challenge v1UITests";
+			name = ChallengeUITests;
 			packageProductDependencies = (
 			);
 			productName = "challenge v1UITests";
-			productReference = D86B255A2DD7E8D800C863E7 /* challenge v1UITests.xctest */;
+			productReference = D86B255A2DD7E8D800C863E7 /* ChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D86B253E2DD7E8D700C863E7 /* Build configuration list for PBXProject "challenge" */;
+			buildConfigurationList = D86B253E2DD7E8D700C863E7 /* Build configuration list for PBXProject "Challenge" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +182,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D86B25422DD7E8D700C863E7 /* challenge v1 */,
-				D86B254F2DD7E8D800C863E7 /* challenge v1Tests */,
-				D86B25592DD7E8D800C863E7 /* challenge v1UITests */,
+				D86B25422DD7E8D700C863E7 /* Challenge */,
+				D86B254F2DD7E8D800C863E7 /* ChallengeTests */,
+				D86B25592DD7E8D800C863E7 /* ChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +240,12 @@
 /* Begin PBXTargetDependency section */
 		D86B25522DD7E8D800C863E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D86B25422DD7E8D700C863E7 /* challenge v1 */;
+			target = D86B25422DD7E8D700C863E7 /* Challenge */;
 			targetProxy = D86B25512DD7E8D800C863E7 /* PBXContainerItemProxy */;
 		};
 		D86B255C2DD7E8D800C863E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D86B25422DD7E8D700C863E7 /* challenge v1 */;
+			target = D86B25422DD7E8D700C863E7 /* Challenge */;
 			targetProxy = D86B255B2DD7E8D800C863E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,7 +446,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/challenge v1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/challenge v1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge";
 			};
 			name = Debug;
 		};
@@ -482,7 +464,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/challenge v1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/challenge v1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Challenge";
 			};
 			name = Release;
 		};
@@ -521,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D86B253E2DD7E8D700C863E7 /* Build configuration list for PBXProject "challenge" */ = {
+		D86B253E2DD7E8D700C863E7 /* Build configuration list for PBXProject "Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D86B25622DD7E8D800C863E7 /* Debug */,
@@ -530,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D86B25642DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1" */ = {
+		D86B25642DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D86B25652DD7E8D800C863E7 /* Debug */,
@@ -539,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D86B25672DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1Tests" */ = {
+		D86B25672DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "ChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D86B25682DD7E8D800C863E7 /* Debug */,
@@ -548,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D86B256A2DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "challenge v1UITests" */ = {
+		D86B256A2DD7E8D800C863E7 /* Build configuration list for PBXNativeTarget "ChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D86B256B2DD7E8D800C863E7 /* Debug */,

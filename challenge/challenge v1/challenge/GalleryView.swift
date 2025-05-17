@@ -130,13 +130,13 @@ struct CompletedChallengeDetailView: View {
                     .fontWeight(.bold)
                     .padding(.horizontal)
 
-                Text("Completed: \(challenge.dateCompleted, style: .date) at \(challenge.dateCompleted, style: .time)")
+                Text("Complété: \(challenge.dateCompleted, style: .date) at \(challenge.dateCompleted, style: .time)")
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     .padding(.horizontal)
 
                 if let notes = challenge.notes, !notes.isEmpty {
-                    Text("Your Notes:")
+                    Text("Vos Notes:")
                         .font(.headline)
                         .padding(.top)
                         .padding(.horizontal)
